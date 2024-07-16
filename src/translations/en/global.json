@@ -1,0 +1,62 @@
+{
+    "navbar": {
+        "btn": "Contact Us"
+    },
+    "flyout": {
+        "es": "SPANISH",
+        "en": "ENGLISH"
+    },
+    "sidebar": {
+        "home": "Home",
+        "pages": "Pages",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Trading & Logistics",
+        "text": "We offer you logistical services and solutions for the import and export of cargo from Venezuela and the United States.",
+        "subtitle": "TRANSPORT SERVICES:",
+        "miniSubtitle": "Inland Transportation",
+        "miniSubtitle2": "Sea Transportation",
+        "miniSubtitle3": "Air Transportation"
+    },
+    "contact": {
+        "titleD": "Contact",
+        "subtitle": "Home",
+        "call": "Call us",
+        "write": "Write to us",
+        "locate": "Head office",
+        "location": "Street 93. Urb. Industrial La Quizanda, local 67 - 200. Valencia-Edo. Carabobo",
+        "title": "¡Get in contact with us!",
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "msg": "Message",
+        "btn": "Send"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "Home",
+        "h2": "OUR SERVICES",
+        "h3.1": "Nouma Trading & Logistics offers a wide range of logistics services and solutions. Our services include:",
+        "h3.2": "FREE TRANSPORT SERVICE:",
+        "h3.3": "Zones:",
+        "h3.4": "Conditions:",
+        "pt1": "Storage",
+        "pt2": "Customs Agency",
+        "pt3": "Merchandise Insurance",
+        "pt4": "Palletization",
+        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Nagunagua)",
+        "pt6": "Lara (Barquisimeto y Cabudare)",
+        "pt7": "Oriente (Monagas-Maturin)",
+        "pt8": "Yaracuy (San Felipe)",
+        "pt9": "Aragua (Maracay)",
+        "pt10": "The route is consolidated and is coordinated based on the number of kilos per area.",
+        "pt11": "Central Areas (Foreigners are charged the additional fee for the stop)",
+        "pt12": "Purchases of a minimum of 1 drum and/or 8 bags or boxes"
+    },
+    "footer": {
+        "text": "© 2023 Nouma Trading & Logistics. J-41304784-5 All rights reserved."
+    }
+}

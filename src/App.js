@@ -1,27 +1,19 @@
-import React from 'react';
-import Sidebar from "./components/Sidebar";
-import Inicio from "./components/Inicio";
-import Inicio2 from "./components/Inicio2";
-import Footer from "./components/footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contacto from "./pages/Contacto";
+import Servicios from "./pages/Servicios";
 
-const App = () => {
-  return (
-      <div className='font-Pthin'>
-          <div className='z-20 sticky top-0'>
-            <Sidebar/>
-          </div>
-            <div className='flex ml-20 z-0'>
-              <Inicio></Inicio>
-            </div>
-            <div className='flex ml-20 z-0'> 
-              <Inicio2></Inicio2>
-            </div>
-            <div className='flex pl-20 z-0'>
-              <Footer></Footer>
-            </div>
-      </div>
-
+export default function App(){
+  return(
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path="/Home" element={<Home />}/>
+          <Route path="/Contacto" element={<Contacto />}/>
+          <Route path="/Servicios" element={<Servicios />}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
-
-export default App

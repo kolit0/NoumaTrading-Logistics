@@ -1,0 +1,62 @@
+{
+    "navbar": {
+        "btn": "Contáctanos"
+    },
+    "flyout": {
+        "es": "ESPAÑOL",
+        "en": "INGLÉS"
+    },
+    "sidebar": {
+        "home": "Inicio",
+        "pages": "Páginas",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "home": {
+        "title": "Comercio & Logística",
+        "text": "Te ofrecemos servicios logísticos y soluciones para la importación y exportación de cargas desde Venezuela y Estados Unidos.",
+        "subtitle": "SERVICIOS DE TRANSPORTE:",
+        "miniSubtitle": "Transporte Terrestre",
+        "miniSubtitle2": "Transporte Marítimo",
+        "miniSubtitle3": "Transporte Aéreo"
+    },
+    "contact": {
+        "titleD": "Contacto",
+        "subtitle": "Inicio",
+        "call": "Llámanos",
+        "write": "Escríbenos",
+        "locate": "Ubícanos",
+        "location": "Calle 93. Urb. Industrial La Quizanda, local 67 - 200. Valencia-Edo. Carabobo",
+        "title": "¡Ponte en Contacto con Nosotros!",
+        "name": "Nombre",
+        "company": "Empresa",
+        "email": "Email",
+        "phone": "Teléfono",
+        "msg": "Mensaje",
+        "btn": "Enviar"
+    },
+    "services": {
+        "title": "Servicios",
+        "subtitle": "Inicio",
+        "h2": "NUESTROS SERVICIOS",
+        "h3.1": "Nouma Trading & Logistics ofrece una amplia gama de servicios y soluciones logísticas:",
+        "h3.2": "Servicio de Flete Gratis:",
+        "h3.3": "Zonas:",
+        "h3.4": "Condiciones:",
+        "pt1": "Almacenamiento de Mercancía",
+        "pt2": "Agenciamiento Aduanal",
+        "pt3": "Seguro de Mercancía",
+        "pt4": "Paletizado",
+        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Nagunagua)",
+        "pt6": "Lara (Barquisimeto y Cabudare)",
+        "pt7": "Oriente (Monagas-Maturin)",
+        "pt8": "Yaracuy (San Felipe)",
+        "pt9": "Aragua (Maracay)",
+        "pt10": "La ruta es consolidada y se coordina en función a la cantidad de kilos por zona.",
+        "pt11": "Zonas Céntricas (Foráneas se cobra el adicional de la parada)",
+        "pt12": "Compras de minimo 1 tambor y/o 8 sacos o cajas"
+    },
+    "footer": {
+        "text": "© 2023 Nouma Trading & Logistics. J-41304784-5 Todos los Derechos Reservados."
+    }
+}
