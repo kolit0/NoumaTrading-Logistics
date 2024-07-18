@@ -5,8 +5,12 @@ import Inicio2 from "../components/Inicio2";
 import Enviar from "../components/ContactoEnviar";
 import Footer from "../components/footer";
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Inicio - Nouma Trading & Logistics'
+  }, [])
     return(
       <>
         <div className='font-Pthin'>
@@ -14,16 +18,16 @@ export default function Home() {
               <Sidebar/>
               <Ws/>
             </div>
-            <div className='flex ml-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Inicio></Inicio>
             </div>
-            <div className='flex ml-20 z-0'> 
+            <div className='flex md:ml-20 z-0'> 
               <Inicio2></Inicio2>
             </div>
-            <div className='flex ml-20 z-0'> 
+            <div className='flex md:ml-20 z-0'> 
               <Enviar></Enviar>
             </div>
-            <div className='flex pl-20 z-0'>
+            <div className='flex md:pl-20 z-0'>
               <Footer></Footer>
             </div>
       </div>

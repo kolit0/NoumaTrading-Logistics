@@ -8,9 +8,12 @@ const Footer = () => {
   
   return (
     <footer className="footer items-center md:p-4 bg-neutral text-neutral-content">
-  <aside className="items-center grid-flow-col md:pl-52">
+  <aside className="items-center md:grid-flow-col grid grid-cols-1 md:pl-52 p-2">
   <img src={logo} className='h-auto w-52' alt="Logo Quimica Nouma"></img>
-  <p className=''>{t("footer.text")}</p>
+  <p className=''>{t("footer.text")}
+  <p className=''>Made by Otniel Jimenez / kolo03057@gmail.com</p> 
+  </p>
+  
   </aside> 
   <nav className="grid-flow-col pb-4 pl-5 gap-4 md:place-self-center md:justify-self-end">
     <a href='https://x.com/NoumaLogistics' className=' '>

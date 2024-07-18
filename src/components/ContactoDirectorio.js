@@ -19,7 +19,7 @@ export default function Section() {
                             <TfiMenu className="text-white"/>
                         </div>
                         <div>
-                            <h2 className="md:text-xl text-white font-extralight">{t("contact.subtitle")}</h2>
+                            <a href="../Home" className="md:text-xl text-white font-extralight underline hover:text-blue-500">{t("contact.subtitle")}</a>
                         </div>
                         <div className="flex place-items-center">
                             <FaChevronRight className="text-white"/>

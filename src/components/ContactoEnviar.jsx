@@ -3,12 +3,15 @@ import { useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import imgMaersk from "../Imagenes/maersk.jpg";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 function Contactar({children}) {
     const [t] = useTranslation("global");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const [formState, setFormState] = useState({});
+    const [showAlert, setShowAlert] = useState(false); // New state variable for alert visibility
     
     const changeHandler = (event) => {
         setFormState({...formState, [event.target.name]: event.target.value});
@@ -26,7 +29,13 @@ function Contactar({children}) {
             Body: `Telefono: ${formState.phone} Nombre:${formState.name} Mensaje:${formState.msg} Email:${formState.email}`
         };
         if(window.Email){
-            window.Email.send(config).then(() => alert("Email enviado"));
+            window.Email.send(config).then(() => {
+                setShowAlert(true); // Show alert when email is sent successfully
+                
+                setTimeout(() => {
+                    setShowAlert(false);
+                }, 4000);
+            });
         };
     }
 
@@ -36,17 +45,17 @@ function Contactar({children}) {
 
             </div>
             <div className=" flex flex-col px-5 w-full">
-                <div className='bg-[#0e1852] text-gray-300 w-full md:h-[8rem]  md:py-5 h-16 content-center place-items-center' style={{
+                <div className='bg-[#0e1852] text-gray-300 w-full md:h-[8rem]  md:py-5 h-auto py-2 content-center place-items-center' style={{
                 transform: isInView ? "none" : "translateY(-200px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                 }} ref={ref}>
                 {children}
-                    <h2 className='md:text-5xl text-2xl text-center border-b-2 border-[#00c08d] mx-4'>{t("contact.title")}</h2>
+                    <h2 className='md:text-5xl text-xl text-center border-b-2 border-[#00c08d] mx-4'>{t("contact.title")}</h2>
                 </div>
             
                 <form onSubmit={submitHandler} className="mt-2 md:mx-10 mx-5 h-auto  flex flex-col bg-white] gap-y-[0.10rem] rounded-md">
-                    <label className="input input-bordered flex items-center gap-2 bg-gray-300">
+                <label className="input input-bordered flex items-center gap-2 bg-gray-300">
                         <input type="text" name="name" value={formState.name || ''} required className="grow text-[#0e1852] placeholder-[#0e1852]" placeholder={t("contact.name")} onChange={changeHandler} />
                     </label>
                     <label className="input input-bordered flex items-center gap-2 bg-gray-300">
@@ -65,6 +74,28 @@ function Contactar({children}) {
                         <input type="submit" value={t("contact.btn")} className="text-black px-6 py-2 bg-[#00c08d] rounded-xl hover:bg-[#F6FA70] hover:text-black font-semibold duration-300 ease-in-out mx-2 flex"></input>
                     </div>
                 </form>
+
+                {showAlert && ( // Show div when showAlert is true
+                <div className="flex justify-center">
+                    <AnimatePresence>
+                        <motion.div className="fixed top-20 z-50"
+                        initial={{ y: -250, opacity: 0 }}
+                        animate={{ y: -10, opacity: 1}}
+                        exit={{ y: 250, opacity: 0 }}
+                        transition={{
+                        delay: 0.6,
+                        type: 'spring',
+                        stiffness: 200,
+                        damping: 20,
+                        mass: 0.5
+                        }}>
+                            <div className="bg-[#00c08d] md:w-80 text-center text-black font-bold md:text-2xl text-lg p-4 rounded-md mt-4">
+                                {t("email.send")}
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+                )}
             </div>
         </div>
     )

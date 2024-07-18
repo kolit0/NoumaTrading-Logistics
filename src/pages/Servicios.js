@@ -6,8 +6,12 @@ import Inicio from "../components/ServiciosInicio";
 import Enviar from "../components/ContactoEnviar"
 import Contenido from "../components/ServiciosContenido";
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function Servicios() {
+  useEffect(() => {
+    document.title = 'Servicios - Nouma Trading & Logistics'
+  }, [])
   return(
     <>
       <div className='font-Pthin'>
@@ -15,19 +19,19 @@ export default function Servicios() {
           <Sidebar/>
           <Ws />
         </div>
-        <div className='flex pl-20 z-0'>
+        <div className='flex md:pl-20 z-0'>
           <Directorio/>
         </div>
-        <div className='flex pl-20 z-0'>
+        <div className='flex md:pl-20 z-0'>
           <Inicio/>
         </div>
-        <div className='flex pl-20 z-0'>
+        <div className='flex md:pl-20 z-0'>
           <Contenido/>
         </div>
-        <div className='flex pl-20 z-0'>
+        <div className='flex md:pl-20 z-0'>
           <Enviar/>
         </div>
-        <div className='flex pl-20 z-0'>
+        <div className='flex md:pl-20 z-0'>
           <Footer/>
         </div>
 

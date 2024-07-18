@@ -2,6 +2,9 @@
     "navbar": {
         "btn": "Contáctanos"
     },
+    "email": {
+        "send": "Email Enviado"
+    },
     "flyout": {
         "es": "ESPAÑOL",
         "en": "INGLÉS"
