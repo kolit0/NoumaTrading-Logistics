@@ -50,14 +50,18 @@
         "pt2": "Customs Agency",
         "pt3": "Merchandise Insurance",
         "pt4": "Palletization",
-        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Nagunagua)",
+        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Naguanagua)",
         "pt6": "Lara (Barquisimeto y Cabudare)",
         "pt7": "Oriente (Monagas-Maturin)",
         "pt8": "Yaracuy (San Felipe)",
         "pt9": "Aragua (Maracay)",
         "pt10": "The route is consolidated and is coordinated based on the number of kilos per area.",
         "pt11": "Central Areas (Foreigners are charged the additional fee for the stop)",
-        "pt12": "Purchases of a minimum of 1 drum and/or 8 bags or boxes"
+        "pt12": "Purchases of a minimum of 1 drum and/or 8 bags or boxes",
+        "pt13": "international shopping",
+        "pt14": "Air Transportation",
+        "pt15": "Inland Transportation",
+        "pt16": "Sea Transportation"
     },
     "footer": {
         "text": "© 2023 Nouma Trading & Logistics. J-41304784-5 All rights reserved."

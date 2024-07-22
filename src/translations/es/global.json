@@ -50,14 +50,18 @@
         "pt2": "Agenciamiento Aduanal",
         "pt3": "Seguro de Mercancía",
         "pt4": "Paletizado",
-        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Nagunagua)",
+        "pt5": "Carabobo (Valencia, Guacara, Los Guayos, San Diego, Naguanagua)",
         "pt6": "Lara (Barquisimeto y Cabudare)",
         "pt7": "Oriente (Monagas-Maturin)",
         "pt8": "Yaracuy (San Felipe)",
         "pt9": "Aragua (Maracay)",
         "pt10": "La ruta es consolidada y se coordina en función a la cantidad de kilos por zona.",
         "pt11": "Zonas Céntricas (Foráneas se cobra el adicional de la parada)",
-        "pt12": "Compras de minimo 1 tambor y/o 8 sacos o cajas"
+        "pt12": "Compras de minimo 1 tambor y/o 8 sacos o cajas",
+        "pt13": "Compras Internacionales",
+        "pt14": "Fletes Aéreos",
+        "pt15": "Fletes Terrestes",
+        "pt16": "Fletes Marítimos"
     },
     "footer": {
         "text": "© 2023 Nouma Trading & Logistics. J-41304784-5 Todos los Derechos Reservados."
