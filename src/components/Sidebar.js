@@ -23,7 +23,7 @@ function Sidebar (){
       submenu2: true,
       subemnuItems2: [
         {title: "Grupo Nouma", href: "https://www.gruponouma.com"},
-        {title: "Quimica Nouma"},
+        {title: "Quimica Nouma", href: "https://www.quimicanouma.com"},
         {title: "Vencatalyst", href: "https://vencatalyst.com.ve"},
       ],
     },
@@ -39,10 +39,19 @@ function Sidebar (){
             <div className={`bg-[#0079FF] h-screen ${open ? "md:w-72 w-60 md:opacity-100 opacity-95" : "md:w-20 w-0"} duration-500 absolute z-10`}>
                 <BsArrowLeftShort className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open) & setSubmenuOpen2(!submenuopen2)}/>
 
-                <div className={` bg-white ${!open ? "w-[5rem] items-center md:inline-flex hidden  h-20 px-4": "md:px-16 pl-8"} ${!open ? " py-4 pb-0 duration-500": " flex justify-center"}`}>
+                <div className={` bg-white ${!open ? "w-[5rem] items-center md:inline-flex hidden  h-20 px-4": "md:px-8 pl-8"} ${!open ? " py-4 pb-0 duration-500": " flex justify-center"}`}>
                   {!open ? <motion.img id="NoumaIco" src={noumaIco} className={`size-10 cursor-pointer block float-left mr-2 duration-500`}
                    alt="Nouma Icono"
-                   /> : <motion.img alt="Nouma Logo" src={nouma} className='block h-auto w-40  cursor-pointer mr-2 duration-500'
+                   /> : <motion.img alt="Nouma Logo" src={nouma} className='duration-500 w-60 h-auto'
+                   initial={{ x: -50, opacity: 0 }}
+                   animate={{ x: 0, opacity: 1}}
+                   transition={{
+                     delay: 0,
+                     type: 'spring',
+                     stiffness: 200,
+                     damping: 20,
+                     mass: 0.5
+                   }}
                   />}
                 </div>
                 <div className=" p-5 pt-1">

@@ -21,6 +21,7 @@
     "react-toastify": "^10.0.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://noumatrading.com.ve",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
